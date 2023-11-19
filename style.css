@@ -39,22 +39,22 @@ body::-webkit-scrollbar {display: none;}
     height:88vh;
     width: 100%;
     animation: change 20s infinite ease-in-out;
-    
+    transition: ease-in-out;
 }
 @keyframes change{
     0%{
         background-image: url("image1.jpg");
     }
-    25%{
+    20%{
         background-image: url("image2.jpg");
     }
-    50%{
+    40%{
         background-image: url("image3.jpg");
     }
-    75%{
+    60%{
         background-image: url("image4.jpg");
     }
-    100%{
+    80%{
         background-image: url("image5.jpg");
     }
 }
