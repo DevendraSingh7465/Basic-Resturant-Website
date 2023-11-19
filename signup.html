@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DK Flavors Sign Up </title>
+    <style>
+        body{
+            margin: 0;
+            background-color: #333333;
+            overflow-y: auto;
+            overflow-x: hidden;
+        }
+        body::-webkit-scrollbar {display: none;}
+        .header{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #333333;
+            height: 80px;
+            width: 100%;
+            border-bottom: 1px solid black;
+        }
+        .heading{
+            text-align: center;
+            width: 200px;
+            color: white;
+        }
+        .heading1{
+            color: white;
+            font-size: 27px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .heading1 a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .heading a {
+            text-decoration: none;
+            color: white;
+        }
+        .outer{
+            margin-top: 100px;
+            color: white;
+            text-align: center;
+        }
+        form{
+            margin-top: 40px;
+            font-size: 28px
+            
+        }
+        .form{
+            text-align: left;
+            margin-left: 37vw;
+        }
+        form label{
+            margin-left: 0;
+
+            
+        }
+        form input{
+            margin-top: 10px;
+            border: 1px solid white;
+            background-color: transparent;
+            border-radius: 5px;
+            height: 35px;
+            width: 400px;
+            color: white;
+            padding-left: 10px;
+        }
+        #signup{
+            margin-left: 8vw;
+            font-size: 25px;
+            background-color: transparent;
+            border: 1px solid white;
+            border-radius: 5px;
+            color: white;
+            padding: 10px 20px;
+        }
+        #signup:hover{
+            background-color: white;
+            color: black;
+            border: 1px solid black;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="heading"><a href="#aboutme">ABOUT</a></div>
+            <div class="heading"><a href="#form">RESERVE</a></div>
+            <div class="heading1"><a href="index.html">| DK FLAVORS |</a></div>
+            <div class="heading"><a href="menu.html">MENU</a></div>
+            <div class="heading"><a href="#addressss">CONTACT</a></div>
+        </div>
+    </header>
+    <div class="outer">
+        <h2>Let's stay connected.</h2>
+        Join the herd! Receive occasional news on the latest happenings, seasonal menu items, and specials. <br>
+
+        <div class="form">
+            <form action="">
+                <label for="email">Email Address</label><br>
+                <input id="email" type="email" required> <br> <br>
+                <label for="name">Name</label><br>
+                <input id="name" type="text" required> <br> <br>
+                <button id="signup" onclick="done()" type="submit">SIGN UP</button>
+            </form>
+        </div>
+        
+    </div>
+    <script>
+        
+        function done(){
+            var email = document.getElementById('email').value;
+            var name = document.getElementById('name').value;
+            if(email.length>5 && name.length>2){
+                alert("Sign Up Successfull");
+            }
+            
+            
+        }
+    </script>
+</body>
+</html>

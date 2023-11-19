@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DK Flavors Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> -->
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header">
+                <!-- <img id="logo" src="restlogo.png"> -->
+                <!-- <div class="heading"><a href="">GIFT CARD</a></div>
+                <div class="heading"><a href="">PRIVATE DINING</a></div> -->
+                <div class="heading"><a href="#aboutme">ABOUT</a></div>
+                <div class="heading"><a href="#form">RESERVE</a></div>
+                <div class="heading1">| DK FLAVORS |</div>
+                <div class="heading"><a href="menu.html">MENU</a></div>
+                <div class="heading"><a href="#addressss">CONTACT</a></div>
+                
+            </div>
+        </header>
+        
+        <div class="content">
+            <div class="image-container"></div>
+
+            <div class="address" id="addressss">
+                <div class="first">
+                    <h3>Address</h3> 
+                    80W. Wagholi <br>
+                    Pune.Maharastra <br>
+                    <!-- <button class="directions"><a href="">Directions</a></button> -->
+                    <a href=""><button class="directions">Directions</button></a>
+                </div>
+                <div class="second">
+                    <h3>Hours</h3> 
+                    <h4>Monday - Friday <br> 4:30PM - 10:00PM</h4>
+                    <h4>Saturday & Sunday <br> 4:30PM - 11:30PM</h4>
+                </div>
+                <div class="third">
+                    <h3>Contact</h3> 
+                    <h4>+91-9123322198</h4>
+                    <h4>info@dkflavors.com</h4>
+                </div>
+            </div>
+            
+            <div class="freeback"></div>
+
+            <div class="aboutus">
+                <img src="content1.jpg" alt="">
+                <img id="image2" src="content2.jpg" alt="">
+                <div id="aboutme">
+                    <h3>DK FLAVORS</h3>
+                    <h4>As one of the first restaurants on Pune's famed Restaurant. DK Flavors began in 2010 with a goal of serving bold, global flavors to our local community and visitors. Since then, our desire to treat guests like family has remained the same (as have our Green Beans) – but our seasonal flavors, cocktails, wine and locally-rooted beer are ever-changing.
+
+                    </h4>
+                </div>
+            </div>
+            <div class="reserve">
+                <div id="form">
+
+                    <h1>Make a Reservation</h1>
+                    <form action="">
+                        <input type="text" id="name" required placeholder="Name"><br>
+                        <input type="date" name="date" id="date" required> <br>
+                        <input type="time" name="time" id="time" required><br>
+                        <select name="people" id="people" required>
+                            <option value="">Select People</option>
+                            <option value="">2 People</option>
+                            <!-- <option value="">3 People</option> -->
+                            <option value="">4 People</option>
+                            <!-- <option value="">5 People</option> -->
+                            <option value="">6 People</option>
+                            <option value="">8 People</option>
+                            <option value="">8+ People</option>
+                        </select><br>
+                        <button type="submit" id="submit" onclick="reservation()">Find Table</button>
+                        <script>
+                            function reservation(){
+                                var name = document.getElementById('name').value;
+                                var date = document.getElementById('date').value;
+                                var time = document.getElementById('time').value;
+                                var people = document.getElementById('people').value;
+                                if(name.length>0 && date.length>0 && time.length>0  ){
+                                    alert("Reservation Done!")
+                                }
+                            }
+                        </script>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="footer">
+                <div id="thanks">
+                    Thanks For Visiting!
+                </div>
+                <div class="footermail">
+                    <center>
+                
+                    Join the herd! <br>
+                    Join our mailing list and keep up with all the exciting things.
+                    <center><a href="signup.html"><button id="signupbtn">SIGN UP</button></a></center>
+                    </center>
+                </div>
+                <div class="footerending">
+                    <center>
+                        <a href="">
+                        Website Accessibility</a> &nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="">
+
+                        Site Map</a> &nbsp;&nbsp;&nbsp; 
+                        
+                        <a href="">
+
+                        Join our Team</a> &nbsp;&nbsp;&nbsp;&nbsp; 
+                        
+                        <a href="">
+
+                        Press Inquiries</a> &nbsp;&nbsp;&nbsp;&nbsp; 
+                        
+                        <a href="">
+
+                        Email Newsletter</a> <br>
+                        
+                        &copy; 2023 Pune Restaurant Group, LLC. All Rights Reserved
+                    </center>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
